@@ -1,0 +1,59 @@
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body{
+  font-size: 16px;
+}
+h1 {
+  font-size: 65px;
+  font-family: sans-serif;
+  color: orange;
+}
+
+.paragraph {
+  font-weight: 600;
+  font-size: 3em;
+}
+
+.list {
+  color: white;
+  font-style: italic;
+  line-height: 2em;
+  text-align: justify;
+  list-style-type: none;
+}
+
+ul li:first-child {
+  background-color: #f8e633;
+  color: black;
+}
+
+ul li:last-child {
+  background-color: brown;
+  color: white;
+}
+
+ul li#red {
+  background-color: red;
+  color: white;
+}
+
+ol.list li:first-child {
+background-color: #8257e5;
+}
+
+ol.list li#green {
+background-color: #4ed165;
+}
+
+ol.list li:last-child {
+background-color: blue;
+}
