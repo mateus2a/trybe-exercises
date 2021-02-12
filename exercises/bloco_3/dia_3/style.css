@@ -61,7 +61,7 @@ p {
 }
 */
 
-
+/*
 h1, p {
   text-align: center;
 }
@@ -81,4 +81,52 @@ li:hover {
 li:active a{
   color: antiquewhite;
   font-family: 'Courier New', Courier, monospace;
+}
+*/
+
+
+div:hover {
+  border: 3px solid palegreen;
+}
+
+div:first-of-type {
+  background-color: paleturquoise;
+}
+
+div:last-of-type {
+  background-color: peru;
+}
+
+div:nth-of-type(2n) {
+  background-color: slateblue;
+}
+
+div:nth-of-type(3n) {
+  background-color: red;
+}
+
+div:nth-of-type(4n) {
+  background-color: purple;
+}
+
+
+
+body div:first-of-type {
+  color: blueviolet;
+}
+
+body div:nth-last-child(3n+2) {
+  color: aquamarine;
+}
+
+body div:nth-last-child(3n+3) {
+  color: black;
+}
+
+body div:nth-last-child(3n+4) {
+  color: darkcyan;
+}
+
+body div:last-of-type {
+  color: aliceblue;
 }
