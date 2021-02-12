@@ -1,3 +1,4 @@
+/*
 .caixa {
   color: white;
   display: inline-block;
@@ -12,16 +13,50 @@
 }
 
 .padding {
-  /* insira aqui um padding de 20px na classe abaixo para aplicá-lo aos itens B, C e D */
   padding: 20px;
-  }
+}
 
-  .margin {
-  /* insira aqui uma margem de 30px na classe abaixo para aplicá-la aos itens C e D */
+.margin {
   margin: 30px;
-  }
+}
 
-  .border {
-  /* insira aqui uma borda com valor '5px solid black' para aplicá-la ao item D */
+.border {
   border: 5px solid black;
-  }
+}
+*/
+
+
+/*
+.super-mario {
+  position: absolute;
+  width: 200px;
+}
+
+p {
+  position: absolute;
+  top: 425px;
+  left: 420px;
+  z-index: 2;
+}
+
+.goomba {
+  position: absolute;
+  width: 200px;
+  top: 400px;
+}
+
+.baloon {
+  position: absolute;
+  width: 200px;
+  top: 400px;
+  left: 400px;
+  z-index: 1;
+}
+
+.bowser {
+  position: absolute;
+  width: 200px;
+  top: 400px;
+  left: 600px;
+}
+*/
