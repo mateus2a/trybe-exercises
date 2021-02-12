@@ -85,6 +85,7 @@ li:active a{
 */
 
 
+/*
 div:hover {
   border: 3px solid palegreen;
 }
@@ -129,4 +130,74 @@ body div:nth-last-child(3n+4) {
 
 body div:last-of-type {
   color: aliceblue;
+}
+*/
+
+
+ol li {
+  background-color: yellow;
+  margin-top: 5px;
+}
+
+ol li:nth-child(2n) {
+  color: green;
+}
+
+/*Para essa funcionalidade utilizei como base o projeto do xieranmaya
+  link do repositorio do github: https://github.com/xieranmaya/blog/issues/12
+*/
+
+ol li:not(:first-child):not(:nth-child(2n + 4)):not(:nth-child(3n + 6)) {
+  text-transform: uppercase;  
+}
+
+
+
+h1 > em, h2 > em{
+  color: red;
+  font-size: 40px;
+  border: 1px solid;
+}
+
+
+li, li > em {
+  font-size: 20px;
+
+}
+
+li > em {
+  font-weight: bold;
+}
+
+ul:first-of-type li:nth-child(-n+3){
+  color: blue;
+}
+
+.java {
+  background-color: pink;
+}
+
+
+ul:last-of-type li:hover {
+  font-weight: bold;
+}
+
+ul:last-of-type li:nth-child(1) a:hover {
+  color: orange;
+}
+
+ul:last-of-type li:nth-child(2) a:hover {
+  color: green;
+}
+
+ul:last-of-type li:nth-child(3) a:hover {
+  color: black;
+}
+
+ul:last-of-type li:nth-child(4) a:hover {
+  color: yellow;
+}
+
+ul:last-of-type li:nth-child(5) a:hover {
+  color: greenyellow;
 }
