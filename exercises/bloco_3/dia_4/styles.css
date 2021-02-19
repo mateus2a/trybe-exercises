@@ -1,8 +1,30 @@
 .border {
   border: 5px solid rgb(191,68,69);
+  margin-bottom: 5px;
+}
+
+.links {
+  color: rgb(112, 47, 198);
+  text-decoration: none;
+  transition: 0.6s;
+}
+
+.links:hover {
+  color: rgb(70, 29, 124);
 }
 
 header {
   background-color: rgb(174,255,201);
   text-align: center;
 }
+
+nav {
+  background-color: rgb(245,255,164);
+}
+
+nav ul li{
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 30px;
+}
+
