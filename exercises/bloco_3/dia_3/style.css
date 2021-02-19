@@ -1,0 +1,203 @@
+/*
+.caixa {
+  color: white;
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.width-and-height {
+  height: 50px;
+  width: 50px;
+}
+
+.padding {
+  padding: 20px;
+}
+
+.margin {
+  margin: 30px;
+}
+
+.border {
+  border: 5px solid black;
+}
+*/
+
+
+/*
+.super-mario {
+  position: absolute;
+  width: 200px;
+}
+
+p {
+  position: absolute;
+  top: 425px;
+  left: 420px;
+  z-index: 2;
+}
+
+.goomba {
+  position: absolute;
+  width: 200px;
+  top: 400px;
+}
+
+.baloon {
+  position: absolute;
+  width: 200px;
+  top: 400px;
+  left: 400px;
+  z-index: 1;
+}
+
+.bowser {
+  position: absolute;
+  width: 200px;
+  top: 400px;
+  left: 600px;
+}
+*/
+
+/*
+h1, p {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+li:hover {
+  background-color: orange;
+  color: #8257e5;
+}
+
+li:active a{
+  color: antiquewhite;
+  font-family: 'Courier New', Courier, monospace;
+}
+*/
+
+
+/*
+div:hover {
+  border: 3px solid palegreen;
+}
+
+div:first-of-type {
+  background-color: paleturquoise;
+}
+
+div:last-of-type {
+  background-color: peru;
+}
+
+div:nth-of-type(2n) {
+  background-color: slateblue;
+}
+
+div:nth-of-type(3n) {
+  background-color: red;
+}
+
+div:nth-of-type(4n) {
+  background-color: purple;
+}
+
+
+
+body div:first-of-type {
+  color: blueviolet;
+}
+
+body div:nth-last-child(3n+2) {
+  color: aquamarine;
+}
+
+body div:nth-last-child(3n+3) {
+  color: black;
+}
+
+body div:nth-last-child(3n+4) {
+  color: darkcyan;
+}
+
+body div:last-of-type {
+  color: aliceblue;
+}
+*/
+
+
+ol li {
+  background-color: yellow;
+  margin-top: 5px;
+}
+
+ol li:nth-child(2n) {
+  color: green;
+}
+
+/*Para essa funcionalidade utilizei como base o projeto do xieranmaya
+  link do repositorio do github: https://github.com/xieranmaya/blog/issues/12
+*/
+
+ol li:not(:first-child):not(:nth-child(2n + 4)):not(:nth-child(3n + 6)) {
+  text-transform: uppercase;  
+}
+
+
+
+h1 > em, h2 > em{
+  color: red;
+  font-size: 40px;
+  border: 1px solid;
+}
+
+
+li, li > em {
+  font-size: 20px;
+
+}
+
+li > em {
+  font-weight: bold;
+}
+
+ul:first-of-type li:nth-child(-n+3){
+  color: blue;
+}
+
+.java {
+  background-color: pink;
+}
+
+
+ul:last-of-type li:hover {
+  font-weight: bold;
+}
+
+ul:last-of-type li:nth-child(1) a:hover {
+  color: orange;
+}
+
+ul:last-of-type li:nth-child(2) a:hover {
+  color: green;
+}
+
+ul:last-of-type li:nth-child(3) a:hover {
+  color: black;
+}
+
+ul:last-of-type li:nth-child(4) a:hover {
+  color: yellow;
+}
+
+ul:last-of-type li:nth-child(5) a:hover {
+  color: greenyellow;
+}
