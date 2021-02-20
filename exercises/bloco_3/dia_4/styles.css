@@ -1,0 +1,107 @@
+.border {
+  border: 5px solid rgb(191,68,69);
+  margin-bottom: 5px;
+}
+
+.links {
+  color: rgb(112, 47, 198);
+  text-decoration: none;
+  transition: 0.6s;
+}
+
+.links:hover {
+  color: rgb(70, 29, 124);
+}
+
+h2 {
+  margin-left: 20px;
+  font-size: 28px;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-left: 23px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.header {
+  background-color: rgb(174,255,201);
+  text-align: center;
+}
+
+nav {
+  background-color: rgb(245,255,164);
+}
+
+nav ul li{
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 30px;
+}
+
+article {
+  background-color: rgb(248,186,251);
+  width: 80%;
+}
+
+section {
+  background-color: rgb(97,216,255);
+  margin: 0 15px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+  margin-top: 15px;
+  margin-left: 23px;
+  margin-bottom: 10px;
+}
+
+p {
+  width: 60%;
+  margin-left: 25px;
+  font-size: 20px;
+}
+
+img {
+  width: 40%;
+  max-width: 400px;
+  
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+a {
+  font-size: 20px;
+}
+
+article {
+  display: inline-block;
+}
+
+aside {
+  float: right;
+  width: 18%;
+  background-color: rgb(241,165,184);
+}
+
+footer {
+  background-color: rgb(218,254,255);
+  text-align: right;
+}
+
+@media screen and (max-width: 1100px) {
+  aside {
+    display: none;
+  }
+
+  article {
+    width: 99%;
+  }
+}
