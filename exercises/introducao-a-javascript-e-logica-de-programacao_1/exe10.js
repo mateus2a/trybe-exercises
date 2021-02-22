@@ -1,6 +1,9 @@
 let productCost = 20;
 let saleValue = 30;
-
+/**
+ * Para o calculo de porcetangem usei como base o código do Diego Serafim,
+ * segue o link do código: https://forum.scriptbrasil.com.br/topic/102857-calculo-de-porcentagem-em-javascript/
+ */
 let costTax = productCost * (20/100);
 let totalCost = productCost + costTax;
 let profit = saleValue - totalCost;
