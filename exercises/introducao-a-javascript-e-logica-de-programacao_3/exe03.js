@@ -3,19 +3,17 @@
  * link para o StackOverFlow: https://es.stackoverflow.com/questions/297450/alinear-pir%C3%A1mide-de-asteriscos-javascript 
  */
 
-let n = 5;
-let symbol = '*'
+let line = 5;
+let symbol = '*';
 
-for (let i = 0; i < n; i++) {
-  let spaces = '';
-  for (let j = 1; j < n - i; j++) {
-    spaces = spaces + ' ';
-    
+for (let i = 0; i < line; i++) {
+  let space = '';
+  for (let j = 1; j < line - i; j++) {
+    space = space + ' ';
   }
 
   for (let j = 0; j < i + 1; j++) {
-    spaces = spaces + symbol;
-    
+    space = space + symbol;
   }
-  console.log(spaces);
+  console.log(space);
 }
