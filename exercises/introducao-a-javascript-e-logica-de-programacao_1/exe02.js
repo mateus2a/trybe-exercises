@@ -1,12 +1,14 @@
-let a = 20;
-let b = 10;
 
-if (a > b) {
-  console.log(a);
-} else if (a < b) {
-  console.log(b);
-} else if (a == b){
-  console.log('Os números são iguais');
-} else {
-  console.log('Não se aplica')
+function higherNumber(numberOne, numberTwo) {
+  if (numberOne > numberTwo) {
+    return numberOne;
+  } else if (numberOne < numberTwo) {
+    return numberTwo;
+  } else if (numberOne == numberTwo){
+    console.log('Os números são iguais');
+  } else {
+    console.log('Não se aplica');
+  }
 }
+
+console.log(higherNumber(10, 30));
