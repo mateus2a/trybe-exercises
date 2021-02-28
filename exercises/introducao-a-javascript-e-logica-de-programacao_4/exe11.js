@@ -1,12 +1,15 @@
-
+/**
+ * Me baseei um pouco no código do Maiki Rodrigues, link do StackOverFlow:
+ * https://pt.stackoverflow.com/questions/457749/como-criar-uma-fun%C3%A7%C3%A3o-fatorial-usando-o-contador-for
+ */
 
 function numberInt(number) {
-  let resultado = 0;
+  let result = 0;
 
   for (let index = 1; index <= number; index++) {
-    resultado += index;
+    result += index;
   }
-  return resultado;
+  return result;
 }
 
 console.log(numberInt(5))
