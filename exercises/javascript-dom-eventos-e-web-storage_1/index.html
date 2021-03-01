@@ -71,17 +71,28 @@
 
         function paragraphUpperCase() {
           let textUpperCase = document.getElementsByTagName("p");
-          
+
           for (let index = 0; index < textUpperCase.length; index++) {
             textUpperCase[index].style.textTransform = "uppercase";
           }
         }
 
+
+        function showContentInConsole() {
+          let paragraphs = document.getElementsByTagName("p");
+
+          for (let index = 0; index < paragraphs.length; index++) {
+            console.log(paragraphs[index].innerHTML);
+          }
+        }
+
+        
         changeText();
         backgroundColorGreen();
         backgroundColorWhite();
         fixH1();
         paragraphUpperCase();
+        showContentInConsole();
     </script>
   </body>
 </html>
