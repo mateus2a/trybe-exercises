@@ -69,10 +69,19 @@
           title.innerText = "Exercício 5.1 - JavaScript";
         }
 
+        function paragraphUpperCase() {
+          let textUpperCase = document.getElementsByTagName("p");
+          
+          for (let index = 0; index < textUpperCase.length; index++) {
+            textUpperCase[index].style.textTransform = "uppercase";
+          }
+        }
+
         changeText();
         backgroundColorGreen();
         backgroundColorWhite();
         fixH1();
+        paragraphUpperCase();
     </script>
   </body>
 </html>
