@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=v, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<div id="paiDoPai">
+  <div id="pai">
+    <div id="primeiroFilho"></div>
+    <div id="elementoOndeVoceEsta">
+      <div id="primeiroFilhoDoFilho"></div>
+      <div id="segundoEUltimoFilhoDoFilho"></div>
+    </div>
+    Atenção!
+    <div id="terceiroFilho"></div>
+    <div id="quartoEUltimoFilho"></div>
+  </div>
+</div>
+
+
+<script>
+  //1 Questão
+  document.querySelector("#elementoOndeVoceEsta");
+
+  //2 Questão
+  let element = document.querySelector("#elementoOndeVoceEsta").parentNode;
+  element.style.color = "red"
+
+  //3 Questão
+  let primeiroFilhoDoFilho = document.querySelector("#primeiroFilhoDoFilho");
+  primeiroFilhoDoFilho.innerHTML = "Olá mundo";
+
+  //4 Questão
+  document.querySelector("#pai").children[0];
+
+  //5 Questão
+  document.querySelector("#elementoOndeVoceEsta").previousElementSibling;
+
+  //6 Questão
+  document.querySelector("#elementoOndeVoceEsta").parentNode;
+
+  //7 Questão
+  document.querySelector("#elementoOndeVoceEsta").nextElementSibling;
+
+  //8 Questão
+  document.querySelector("#pai").children[2];
+
+  //9 Questão
+  let pai = document.querySelector("#pai");
+  let irmaoOndeVoceEsta = document.createElement("div");
+  irmaoOndeVoceEsta.classList.add('irmaoOndeVoceEsta');
+  pai.appendChild(irmaoOndeVoceEsta);
+  
+  //10 Questão
+  let elementoOndeVoceEsta = document.querySelector("#elementoOndeVoceEsta");
+  let filhoOndeVoceEsta = document.createElement("div");
+  filhoOndeVoceEsta.classList.add('filhoOndeVoceEsta');
+  elementoOndeVoceEsta.appendChild(filhoOndeVoceEsta);
+
+  //11 Questão
+  let primeiroFilho = document.querySelector("#primeiroFilhoDoFilho");
+  let filhoPrimeiroFilho = document.createElement("div");
+  filhoPrimeiroFilho.classList.add('filhoPrimeiroFilhoDoFilho');
+  primeiroFilho.appendChild(filhoPrimeiroFilho);
+
+  //12 Questão
+  let currentElement = document.querySelector(".filhoPrimeiroFilhoDoFilho");
+  currentElement.parentNode.parentNode.parentNode.children[2];
+  
+
+  //13 Questão
+  let terceiroFilho = document.getElementById("terceiroFilho");
+  terceiroFilho.remove();
+
+  let primeiroFilhoRemove = document.getElementById("primeiroFilho");
+  primeiroFilhoRemove.remove();
+
+  let quartoEUltimoFilho = document.getElementById("quartoEUltimoFilho");
+  quartoEUltimoFilho.remove();
+
+  let segundoEUltimoFilhoDoFilhoRemove = document.getElementById("segundoEUltimoFilhoDoFilho");
+  segundoEUltimoFilhoDoFilhoRemove.remove();
+
+  let filhoPrimeiroFilhoDoFilhoRemove = document.querySelector(".filhoPrimeiroFilhoDoFilho");
+  filhoPrimeiroFilhoDoFilhoRemove.remove();
+
+  let filhoOndeVoceEstaRemove = document.querySelector(".filhoOndeVoceEsta");
+  filhoOndeVoceEstaRemove.remove();
+
+  let irmaoOndeVoceEstaRemove = document.querySelector(".irmaoOndeVoceEsta");
+  irmaoOndeVoceEstaRemove.remove();
+</script>
+</body>
+</html>
