@@ -48,6 +48,29 @@
 
   //8 Questão
   document.querySelector("#pai").children[2];
+
+  //9 Questão
+  let pai = document.querySelector("#pai");
+  let irmaoOndeVoceEsta = document.createElement("div");
+  irmaoOndeVoceEsta.classList.add('irmaoOndeVoceEsta');
+  pai.appendChild(irmaoOndeVoceEsta);
+  
+  //10 Questão
+  let elementoOndeVoceEsta = document.querySelector("#elementoOndeVoceEsta");
+  let filhoOndeVoceEsta = document.createElement("div");
+  filhoOndeVoceEsta.classList.add('filhoOndeVoceEsta');
+  elementoOndeVoceEsta.appendChild(filhoOndeVoceEsta);
+
+  //11 Questão
+  let primeiroFilho = document.querySelector("#primeiroFilhoDoFilho");
+  let filhoPrimeiroFilho = document.createElement("div");
+  filhoPrimeiroFilho.classList.add('filhoPrimeiroFilhoDoFilho');
+  primeiroFilho.appendChild(filhoPrimeiroFilho);
+
+  //12 Questão
+  let currentElement = document.querySelector(".filhoPrimeiroFilhoDoFilho");
+  currentElement.parentNode.parentNode.parentNode.children[2];
+  
 </script>
 </body>
 </html>
