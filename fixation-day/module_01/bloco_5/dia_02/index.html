@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=v, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<div id="paiDoPai">
+  <div id="pai">
+    <div id="primeiroFilho"></div>
+    <div id="elementoOndeVoceEsta">
+      <div id="primeiroFilhoDoFilho"></div>
+      <div id="segundoEUltimoFilhoDoFilho"></div>
+    </div>
+    Atenção!
+    <div id="terceiroFilho"></div>
+    <div id="quartoEUltimoFilho"></div>
+  </div>
+</div>
+
+
+<script>
+  //1 Questão
+  document.querySelector("#elementoOndeVoceEsta");
+
+  //2 Questão
+  let element = document.querySelector("#elementoOndeVoceEsta").parentNode;
+  element.style.color = "red"
+
+  //3 Questão
+  let primeiroFilhoDoFilho = document.querySelector("#primeiroFilhoDoFilho");
+  primeiroFilhoDoFilho.innerHTML = "Olá mundo";
+
+  //4 Questão
+  document.querySelector("#pai").children[0];
+
+  //5 Questão
+  document.querySelector("#elementoOndeVoceEsta").previousElementSibling;
+
+  //6 Questão
+  document.querySelector("#elementoOndeVoceEsta").parentNode;
+
+  //7 Questão
+  document.querySelector("#elementoOndeVoceEsta").nextElementSibling;
+
+  //8 Questão
+  document.querySelector("#pai").children[2];
+</script>
+</body>
+</html>
