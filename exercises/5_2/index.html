@@ -108,7 +108,14 @@
         li.innerHTML = index;
         ul.appendChild(li);
       }
-      rightContent.appendChild(ul)
+      rightContent.appendChild(ul);
+
+      //Questão 9
+      for (let index = 0; index < 3; index++) {
+        let h3 = document.createElement('h3');
+        h3.innerHTML = 'Ola ' + index;
+        mainContent.appendChild(h3);
+      }
     </script>
   </body>
 </html>
