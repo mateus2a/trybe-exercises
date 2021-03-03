@@ -19,5 +19,6 @@
   "homepage": "https://github.com/mateus2a/trybe-exercises#readme",
   "dependencies": {
     "lab-roman-int-converter": "^1.0.8"
-  }
+  },
+  "devDependencies": {}
 }

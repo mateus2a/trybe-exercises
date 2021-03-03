@@ -1,5 +1,5 @@
 /**
- * Fiquei com um pouco de dificuldade nessa questão, então resolvi usar como 
+ * Fiquei com um pouco de dificuldade nessa questão, então resolvi usar como
  * base o código do Evan Kennedy: https://stackoverflow.com/questions/11966520/how-to-find-prime-numbers-between-0-100
  */
 function isPrime(num) {

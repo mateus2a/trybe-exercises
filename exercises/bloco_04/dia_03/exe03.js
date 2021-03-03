@@ -1,6 +1,6 @@
 /**
  * Para esse exercicio usei como base a implementação do Jemonge
- * link para o StackOverFlow: https://es.stackoverflow.com/questions/297450/alinear-pir%C3%A1mide-de-asteriscos-javascript 
+ * link para o StackOverFlow: https://es.stackoverflow.com/questions/297450/alinear-pir%C3%A1mide-de-asteriscos-javascript
  */
 
 let line = 5;

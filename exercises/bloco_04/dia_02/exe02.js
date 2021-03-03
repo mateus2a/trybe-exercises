@@ -8,4 +8,4 @@ let sum = 0;
 for (let index = 0; index < numbers.length; index++) {
   sum += numbers[index];
 }
-console.log(sum); 
+console.log(sum);
