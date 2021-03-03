@@ -1,8 +1,19 @@
-let a = 10;
-let b = 25;
 
-console.log('Soma: ' + (a + b));
-console.log('Subtração: ' + (a - b));
-console.log('Multiplicação: ' + (a * b));
-console.log('Divisão: ' + (a / b));
+function sum(valueOne, ValueTwo) {
+  return valueOne + ValueTwo;
+}
 
+function sub(valueOne, ValueTwo) {
+  return valueOne - ValueTwo;
+
+}
+
+function mul(valueOne, ValueTwo) {
+  return valueOne * ValueTwo;
+}
+
+function div(valueOne, ValueTwo) {
+  return valueOne / ValueTwo;
+}
+
+console.log(div(10, 20));
