@@ -78,6 +78,56 @@ function displayHolidays() {
 displayHolidays();
 
 // Desafio 4
-function createFridayButton() {
-  
+function createFridayButton(btnText) {
+  let btnFriday = document.createElement('button');
+  let buttonsContainer = document.querySelector('.buttons-container');
+
+  btnFriday.id = 'btn-friday';
+  btnFriday.innerText = btnText;
+  buttonsContainer.appendChild(btnFriday);
 }
+
+createFridayButton('Sexta-feira');
+
+// Desafio 5
+function displayFriday(fridayArray) {
+  let btnFriday = document.querySelector('#btn-friday');
+  let getFridays = document.querySelectorAll('.friday');
+  let newFridayText = 'SEXTOU o/';
+  btnFriday.addEventListener('click', function() { 
+    for (let index = 0; index < getFridays.length; index += 1) {
+      if (getFridays[index].innerHTML != newFridayText) {
+        getFridays[index].innerHTML = newFridayText;
+      } else {
+        getFridays[index].innerHTML = fridayArray[index];
+      }
+      
+    }
+  });
+
+}
+let fridayArray = [4, 11, 18, 25];
+displayFriday(fridayArray);
+
+// Desafio 6
+function dayMouseOver() {
+  let days = document.querySelector('#days');
+
+  days.addEventListener('mouseover', function(event) {
+    event.target.style.fontSize = '30px';
+    event.target.style.fontWeight = '1000';
+  })
+}
+
+function dayMouseOut() {
+  let days = document.querySelector('#days');
+
+  days.addEventListener('mouseout', function(event) {
+    event.target.style.fontSize = '20px';
+    event.target.style.fontWeight = '200';
+  });
+}
+
+
+dayMouseOver();
+dayMouseOut();
