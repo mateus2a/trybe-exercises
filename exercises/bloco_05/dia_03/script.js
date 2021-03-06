@@ -131,3 +131,32 @@ function dayMouseOut() {
 
 dayMouseOver();
 dayMouseOut();
+
+// Desafio 7
+/**
+ * Tentei fazer esse bloco baseado no código do Surya Shakti.
+ * https://medium.com/@suryashakti1999/to-do-list-app-using-javascript-for-absolute-beginners-13ea9e38a033
+ */
+const inputElement = document.querySelector('#task-input');
+const buttonElement = document.querySelector('#btn-add');
+
+buttonElement.addEventListener('click', addTask)
+
+function addTask(event) {
+  event.preventDefault();
+
+  let divElement = document.querySelector('.my-tasks');
+  let spanElement = document.createElement('span');
+
+  spanElement.innerText = inputElement.value;
+  spanElement.classList.add('span-item');
+
+  divElement.appendChild(spanElement);
+
+  if (inputElement.value == '') {
+    return null;
+  }
+}
+
+
+
