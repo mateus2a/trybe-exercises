@@ -1,78 +1,74 @@
+<!--index.html-->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <form action="" method="GET" enctype="multipart/form-data">
-    <fieldset>
-      <legend>Dados Pessoais</legend>
-    
-      <div class="user-name">
-        <label for="name">Nome: </label>
-        <input type="text" id="name" name="name" maxlength="40" required>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario-curriculo</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header class="form-header">
+      <h1>Formulário para cadastro de currículo</h1>
+      <p>Preencha os campos abaixo.</p>
+    </header>
+    <form id="cv-form">
+      <div class="form-row">
+        <fieldset>
+          <div class="line-content">
+            <label for="name">Nome: </label>
+            <input type="text" name="name" id="name" maxlength="40" required>
+          </div>
+          <div class="line-content">
+            <label for="email">Endereço de e-mail: </label>
+            <input class="email-input" type="email" name="email" id="email" maxlength="50" required>
+          </div>
+          <div class="line-content">
+            <label for="cpf-number">CPF: </label>
+            <input type="text" name="cpf" id="cpf-number" maxlength="11" required>
+          </div>
+          <div class="line-content">
+            <label for="address">Endereço: </label>
+            <input type="text" name="address" id="address" maxlength="200" required>
+          </div>
+          <div class="line-content">
+            <label for="city">Cidade: </label>
+            <input type="text" name="city" id="city" maxlength="200" required>
+          </div>
+          <div class="line-content">
+            <label for="state">Estado: </label>
+            <select name="state" id="state" value = "" required>
+            </select>
+          </div>
+          <div class="line-content">
+            <label for="house-apartment">Tipo de imóvel: </label>
+            <input type="radio" name="house-apartment" id="house" value="house" required> <span>Casa</span>
+            <input type="radio" name="house-apartment" id="apartment" value="apartment" required > <span>Apartamento</span>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="line-content">
+            <label for="cv-resume">Resumo do currículo: </label>
+            <textarea id="cv-resume" name="cv-resume" maxlength="1000" cols="100" rows="20" required></textarea>
+          </div>
+          <div class="line-content">
+            <label for="position">Cargo: </label>
+            <input type="text" name="position" id="position" maxlength="40" required >
+          </div>
+          <div class="line-content">
+            <label for="description">Descrição do cargo: </label>
+            <input type="text" id="description" name="description" required>
+          </div>
+          <div class="line-content">
+            <label for="start-date">Data de início: </label>
+            <input type="text" class="input-data" name="start-date" value="" required>
+          </div>
+        </fieldset>
+        <button class="submit-button" type="button">Enviar</button>
+        <button class="clear-button" type="button">Limpar</button>
       </div>
-      <div class="user-email">
-        <label for="email">E-mail: </label>
-        <input type="email" id="email" name="email" maxlength="50" required>
-      </div>
-      <div class="user-cpf">
-        <label for="cpf">C.P.F: </label>
-        <input type="text" id="cpf" name="cpf" maxlength="11" required>
-      </div>
-      <div class="user-address">
-        <label for="address">Endereço: </label>
-        <input type="text" id="address" name="address" maxlength="200" required>
-      </div>
-      <div class="user-city">
-        <label for="city">Cidade: </label>
-        <input type="text" id="city" name="city" maxlength="28" required>
-      </div>
-      <div class="user-state">
-        <select name="state" id="state" required>
-          <option value="">Selecione um Estado</option>
-        </select>
-      </div>
-      <div class="user-radio">
-        <input type="radio" name="radio-button" id="radio-casa" value="casa" required>
-        <label for="radio-casa">Casa</label>
-        
-        <input type="radio" name="radio-button" id="radio-apartamento" value="apartamento" required>
-        <label for="radio-apartamento">Apartamento</label>
-      </div>
-    </fieldset>
-
-    <fieldset>
-      <legend>Último Emprego</legend>
-      <div class="last-job">
-        <label for="textarea">Resumo do Curricúlo: </label>
-        <br>
-        <textarea name="textarea" id="textarea" cols="30" rows="10" maxlength="1000" required></textarea>
-      </div>
-
-      <div class="office">
-        <label for="office">Cargo: </label>
-        <input type="text" id="office" name="office" maxlength="40" required>
-      </div>
-
-      <div class="description">
-        <label for="description">Descrição do Cargo: </label>
-        <input type="text" id="description" name="description" maxlength="500" required>
-      </div>
-
-      <div class="date">
-        <label for="date">Data de Início: </label>
-        <input type="text" id="date" name="date" required>
-      </div>
-      <button type="submit" id="button">Enviar</button>
-    </fieldset>
-  </form>
-
-  <script src="script.js"></script>
-
-</body>
+      </form>
+    <section class="form-data"></section>
+    <script src="script.js"></script>
+  </body>
 </html>
