@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/mateus2a/trybe-exercises#readme",
   "dependencies": {
+    "jquery-validation": "^1.19.3",
+    "just-validate": "^1.5.0",
     "lab-roman-int-converter": "^1.0.8",
     "pikaday": "^1.8.2",
     "uniq": "^1.0.1"
