@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</head>
+<body>
+  <section class="section has-text-centered">
+    <h1 class="title">Formulário</h1>
+    <p class="subtitle is-italic">Cadastre aqui os seus dados</p>
+  </section>
+
+  <section class="section">
+    <form action="/">
+      <div class="field">
+        <label class="label" for="name">Nome</label>
+        <div class="control">
+          <input class="input" id="name" type="text" required>
+        </div>
+      </div><!--field-->
+
+      <div class="field">
+        <label class="label" for="email">E-mail</label>
+        <div class="control">
+          <input class="input" id="email" type="email" required>
+        </div>
+      </div><!--field-->
+
+      <div class="field">
+        <label class="label" for="datepicker">Data</label>
+        <div class="control">
+          <input class="input" id="datepicker" type="text" required>
+        </div>
+      </div><!--field-->
+
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-success" id="save" type="button">Save Changes</button>
+          <button class="button is-danger" type="reset">Cancel</button>
+        </div>
+      </div><!--field-->
+    </form>
+  </section>
+
+  <section class="section">
+    <div class="field">
+      <div class="control" id="datas">
+        <p class="subtitle" id="paragraph-one"></p>
+        <p class="subtitle" id="paragraph-two"></p>
+        <p class="subtitle" id="paragraph-three"></p>
+      </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
