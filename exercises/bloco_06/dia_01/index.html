@@ -7,7 +7,6 @@
   <title>Formulário</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
-
 </head>
 <body>
   <section class="section has-text-centered">
@@ -16,7 +15,7 @@
   </section>
 
   <section class="section">
-    <form action="/">
+    <form action="" id="basic-form" method="POST">
       <div class="field">
         <label class="label" for="name">Nome</label>
         <div class="control">
@@ -40,7 +39,7 @@
 
       <div class="field is-grouped">
         <div class="control">
-          <button class="button is-success" id="save" type="button">Save Changes</button>
+          <button class="button is-success" id="save" type="submit">Save Changes</button>
           <button class="button is-danger" type="reset">Cancel</button>
         </div>
       </div><!--field-->
@@ -58,6 +57,8 @@
   </section>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
-  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+  <script src="js/form-validation.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
