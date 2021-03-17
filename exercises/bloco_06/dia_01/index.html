@@ -15,25 +15,25 @@
   </section>
 
   <section class="section">
-    <form action="" id="basic-form" method="POST">
+    <form action="" id="form">
       <div class="field">
         <label class="label" for="name">Nome</label>
         <div class="control">
-          <input class="input" id="name" type="text" autocomplete="off" required>
+          <input class="input" id="name" type="text" autocomplete="off" data-validation="name" required>
         </div>
       </div><!--field-->
 
       <div class="field">
         <label class="label" for="email">E-mail</label>
         <div class="control">
-          <input class="input" id="email" type="email" autocomplete="off" required>
+          <input class="input" id="email" type="email" autocomplete="off" data-validation="email" required>
         </div>
       </div><!--field-->
 
       <div class="field">
         <label class="label" for="datepicker">Data</label>
         <div class="control">
-          <input class="input" id="datepicker" type="text" autocomplete="off" required>
+          <input class="input" id="datepicker" type="text" autocomplete="off" data-validation="date" required>
         </div>
       </div><!--field-->
 
@@ -41,6 +41,7 @@
         <div class="control">
           <button class="button is-success" id="save" type="submit">Save Changes</button>
           <button class="button is-danger" type="reset">Cancel</button>
+          <p class="subtitle has-text-danger" id="empty"></p>
         </div>
       </div><!--field-->
     </form>
