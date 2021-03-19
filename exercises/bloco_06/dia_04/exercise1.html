@@ -1,50 +1,56 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-@media screen and (max-width: 1100px) and (min-width: 900px){
-  div.example {
-    background: yellow;
-  }
-}
-@media screen and (max-width: 600px){
-  div.example {
-    display: none;
-  }
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-@media screen and (max-width: 900px) and (min-width: 600px){
-  div.outra-div {
-    display: none;
-  }
-}
+  <title>Media Query Exercise 1</title>
 
-@media screen and (min-width: 1500px){
-  div.outra-div {
-    background: red;
-    flex-grow: 1;
-  }
-  div.container {
-    display: flex;
-  }
-
-  div.example {
-    flex-grow: 1;
-    background: chartreuse;
-  }
-}
-</style>
+  <link rel="stylesheet" href="exercise1.css" />
 </head>
+
 <body>
 
-<h2>Change the appearance of DIV on different screen sizes</h2>
-<div class="container">
-  <div class="example">Example DIV.</div>
-  <div class="outra-div">Oi, eu sou outra div.</div>
-</div>
-<p>When the browser's width is between 600 and 900px, change the appearance of DIV. 
-<strong>Resize the browser window to see the effect</strong>.</p>
+  <h1>Media Query Demo</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, ipsum quae veritatis in nihil laudantium labore
+    beatae nulla laborum rem. Error, molestiae eaque quod placeat at. Labore architecto minus accusantium.</p>
+
+  <h2>Box Columns</h2>
+  
+  <div class="container">
+    <figure>
+      <img src="http://placekitten.com/452/450?image=12" alt="Placeholder kitteh">
+      <figcaption>Place Kittens are great</figcaption>
+    </figure>
+  
+    <figure>
+      <img src="http://placekitten.com/452/450?image=5" alt="Placeholder kitteh">
+      <figcaption>Place Kittens are great</figcaption>
+    </figure>
+  
+    <figure>
+      <img src="http://placekitten.com/452/450?image=1" alt="Placeholder kitteh">
+      <figcaption>Place Kittens are great</figcaption>
+    </figure>
+  
+    <figure>
+      <img src="http://placekitten.com/452/450?image=9" alt="Placeholder kitteh">
+      <figcaption>Place Kittens are great</figcaption>
+    </figure>
+  
+    <figure>
+      <img src="http://placekitten.com/452/450?image=6" alt="Placeholder kitteh">
+      <figcaption>Place Kittens are great</figcaption>
+    </figure>
+  </div>
+
 
 </body>
+
 </html>
