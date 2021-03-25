@@ -1,21 +1,21 @@
 const assert = require('assert');
-// escreva a função findTheNeedle aqui
 
-const findTheNeedle = (words, word) => {
-  return words.indexOf(word);
-}
+const greetPeople = (people) => {
+  let greeting = '';
+  let greatingArray = [];
 
-let words = ['house', 'train', 'slide', 'needle', 'book'];
-let expected = 3;
-let output = findTheNeedle(words, 'needle');
-assert.strictEqual(output, expected);
+  for (const person in people) {
+    greatingArray.push(greeting = 'Hello ' + people[person]);
+  }
 
-words = ['plant', 'shelf', 'arrow', 'bird'];
-expected = 0;
-output = findTheNeedle(words, 'plant');
-assert.strictEqual(output, expected);
+  return greatingArray;
+  
+};
 
-words = ['plant', 'shelf', 'arrow', 'bird'];
-expected = -1;
-output = findTheNeedle(words, 'plat');
-assert.strictEqual(output, expected);
+const parameter = ['Irina', 'Ashleigh', 'Elsa'];
+const result = ['Hello Irina', 'Hello Ashleigh', 'Hello Elsa'];
+
+
+assert.strictEqual(typeof (greetPeople), 'function', 'Deve existir uma função chamada greetPeople');
+
+assert.deepStrictEqual(greetPeople(parameter), result);
