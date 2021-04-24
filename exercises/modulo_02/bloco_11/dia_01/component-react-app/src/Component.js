@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
+
 class ComponentReact extends Component {
+    
     render() {
         return (
             <div>
