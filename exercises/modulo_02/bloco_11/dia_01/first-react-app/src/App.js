@@ -1,16 +1,11 @@
-import tick from './tick';
-import './App.css'
+import React from 'react';
 
-function App() {
-  const textJSX = 'Hello, JSX';
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>{textJSX}</h1>
-        <p>{tick}</p>
-      </header>
-    </div>
-  );
+class ReactClass extends React.Component {
+  render() {
+    return (
+      <h1>My first React Class Component!</h1>
+    )
+  }
 }
 
-export default App;
+export default ReactClass;
