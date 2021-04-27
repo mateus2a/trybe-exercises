@@ -33,10 +33,15 @@ li {
     font-size: 22px;
     color: #313131;
     margin-bottom: 5px;
+    padding-left: 10px;
 }
 
+#pokemon-wrapper #peso{
+    padding-left: 20px;
+}
 
 #pokemon-wrapper #type{
+    padding-left: 20px;
 }
 
 img {
