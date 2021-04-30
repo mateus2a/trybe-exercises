@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import NumberOfGuest from './NumberOfGuest';
+import File from './File';
 
 class Form extends Component {
   constructor(props) {
@@ -7,9 +9,14 @@ class Form extends Component {
       isGoing: true,
       numberOfGuests: 2,
       file: '',
+      formWithErrors: ''
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
+  }
+
+  handleError() {
+    
   }
 
   handleInputChange(event) {
@@ -36,23 +43,16 @@ class Form extends Component {
             onChange={this.handleInputChange} />
         </label>
         <br />
-        <label>
-          Número de convidados:
-          <input
-            name="numberOfGuests"
-            type="number"
-            value={this.state.numberOfGuests}
-            onChange={this.handleInputChange} />
-        </label>
 
-        <label>
-          Arquivo:
-          <input
-            name="updateAFile"
-            type="file"
-            value={this.state.file}
-            onChange={this.handleInputChange} />
-        </label>
+        <NumberOfGuest 
+          value={this.state.numberOfGuests} 
+          handleInputChange={this.handleInputChange}
+        />
+
+        <File 
+          value={this.state.file} 
+          handleInputChange={this.handleInputChange}
+        />
         </fieldset>
       </form>
     );
