@@ -4,38 +4,67 @@ class Form extends Component {
   constructor() {
     super();
 
-    this.handleChange = this.handleChange.bind(this);
-
+    this.handleName = this.handleName.bind(this);
+    this.handleSong = this.handleSong.bind(this);
+    this.handleNumber = this.handleNumber.bind(this);
+    this.handleHistory = this.handleHistory.bind(this);
     this.state = {
-      estadoFavorito: '',
-    };
+      song: '',
+      name: '',
+      number: 0,
+      history: '',
+    }
   }
 
-
-  handleChange(event) {
+  handleName(event) { 
     this.setState({
-      estadoFavorito: event.target.value,
-    });
+      name: event.target.value,
+    })
+  }
+
+  handleSong(event) { 
+    this.setState({
+      song: event.target.value,
+    })
+  }
+
+  handleHistory(event) { 
+    this.setState({
+      history: event.target.value,
+    })
+  }
+
+  handleNumber(event) { 
+    this.setState({
+      number: event.target.value,
+    })
   }
 
   render() {
     return (
-      <div>
-        <h1>Estados e React - Tecnologia fantástica ou reagindo a regionalismos?</h1>
-        <form className="form">
-          <label>
-            Diga qual o seu Estado favorito! De React ou do Brasil, você decide! =)
-              <textarea name="estadoFavorito" value={this.state.estadoFavorito} onChange={this.handleChange} />
-          </label>
-          <input
-            type="number"
-            name="idade"
-          />
-          <input
-            type="checkbox"
-            name="vaiComparecer"
-          />
-        </form>
+      <div className="form-container">
+        <select name="select" id="select" value={this.state.song} onChange={this.handleSong}>
+          <option value="k-pop">K-Pop</option>
+          <option value="rock">Rock</option>
+          <option value="blues">Blues</option>
+        </select>
+        <label htmlFor="name">
+          Nome:
+          <input type="text" id="name" value={this.state.name} onChange={this.handleName}/>
+        </label>
+        <label htmlFor="number">
+          Numero:
+          <input type="number" id="number" value={this.state.number} onChange={this.handleNumber}/>
+        </label>
+        <label htmlFor="your-history">
+          <textarea 
+            name="your-history" 
+            id="your-history" 
+            cols="30" rows="10" 
+            value={this.state.history} 
+            onChange={this.handleHistory}>
+          </textarea>
+        </label>
       </div>
     );
   }
