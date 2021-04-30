@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import InputName from './InputName';
+import InputEmail from './InputEmail';
+import InputCpf from './InputCpf';
+import ComboBox from './ComboBox';
+
 import './FormDadosPessoais.css';
 
 class FormDadosPessoais extends Component {
@@ -32,11 +36,11 @@ class FormDadosPessoais extends Component {
     return ( 
       <form action="#">
         <InputName value={this.state.name} handleChange={this.handleChange} />
-        <input type="text" name="email" value={this.state.email}  onChange={this.handleChange} maxLength="50" required />
-        <input type="text" name="cpf" value={this.state.cfp} onChange={this.handleChange} maxLength="11" required />
+        <InputEmail value={this.state.email} handleChange={this.handleChange} />
+        <InputCpf value={this.state.cpf} handleChange={this.handleChange} />
         <input type="text" name="address" value={this.state.address}  onChange={this.handleChange} maxLength="200" required/>
         <input type="text" name="city" value={this.state.city}  onChange={this.handleChange} maxLength="40" required/>
-        <input type="text" name="state" value={this.state.state}  onChange={this.handleChange} maxLength="40" required/>
+        <ComboBox value={this.state.state} handleChange={this.handleChange} />
         <input type="checkbox" name="type" value={this.state.type}  onChange={this.handleChange} />
       </form>
      );
