@@ -1,0 +1,6 @@
+-- Exercise 1
+SELECT
+  DATEDIFF('2030-01-20', '2021-07-21');
+-- Exercise 2
+SELECT
+  TIMEDIFF('10:25:45', '11:00:00');
