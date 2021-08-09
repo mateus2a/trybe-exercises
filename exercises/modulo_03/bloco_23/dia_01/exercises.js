@@ -20,9 +20,21 @@
 */
 // Exercise 6
 /*
-  db.bios.find().limit(3).pretty()
+  db.bios.find().limit(2).skip(5).pretty()
 */
 // Exercise 7
+/*
+  db.books.count()
+*/
 // Exercise 8
+/*
+  db.books.count({ status: "PUBLISH" })
+*/
 // Exercise 9
+/*
+  db.books.find({}, { _id: 0, title: 1, isbn: 1, pageCount: 1 }).limit(3).pretty()
+*/
 // Exercise 10
+/*
+db.books.find({status: "MEAP"}, { title: 1, authors: 1, status: 1 }).skip(5).limit(10).pretty()
+*/
