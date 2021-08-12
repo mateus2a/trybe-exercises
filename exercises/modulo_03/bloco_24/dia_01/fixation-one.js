@@ -21,14 +21,29 @@ db.movies.insertMany([
 db.movies.update(
   {title: "Batman"},
   {$set: { imdbRating: 7.7 }}
-)
+);
 // Exercise 2
 db.movies.update(
   {title: "Godzilla"},
   {$set: { budget: 1 }}
-)
-// Exercise 2
+);
+// Exercise 3
 db.movies.update(
   {title: "Home Alone"},
   {$set: { budget: 15, imdbRating: 5.5 }}
-)
+);
+// Exercise 4
+db.movies.update(
+  {title: "Batman"},
+  {$inc: { imdbRating: 2 }}
+);
+// Exercise 5
+db.movies.update(
+  {title: "Home Alone"},
+  {$inc: { budget: 5 }}
+);
+// Exercise 6
+db.movies.update(
+  {title: "Batman"},
+  {$mul: { imdbRating: 4 }}
+);
