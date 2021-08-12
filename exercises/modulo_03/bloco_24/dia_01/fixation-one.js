@@ -47,3 +47,21 @@ db.movies.update(
   {title: "Batman"},
   {$mul: { imdbRating: 4 }}
 );
+// Exercise 7
+db.movies.update(
+  {title: "Batman"},
+  {$rename: { budget: "estimatedBudget" }}
+);
+// Exercise 8
+db.movies.update(
+  {title: "Home Alone"},
+  {$min: { budget: 5 }}
+);
+// Exercise 9
+db.movies.update(
+  {title: "Godzilla"},
+  {
+    $max: { imdbRating: 8.6 },
+    $set: { "category.2": "thriller" }
+  }
+);
