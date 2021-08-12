@@ -65,3 +65,41 @@ db.movies.update(
     $set: { "category.2": "thriller" }
   }
 );
+// Exercise 10
+db.movies.updateOne(
+  { title: "Home Alone" },
+  {
+currentDate: {
+      lastUpdated: { $type: "timestamp" },
+    },
+  },
+);
+// Exercise 11
+db.movies.updateMany(
+  {},
+  { $set: { sequels: 0 } },
+);
+// Exercise 12
+db.movies.updateMany(
+  {},
+  {
+unset: {
+      budget: "",
+      estimatedBudget: "",
+    },
+  },
+);
+// Exercise 13
+db.movies.updateMany(
+  {
+or: [
+      { title: "Batman" },
+      { title: "Home Alone" },
+    ],
+  },
+  {
+max: {
+      imdbRating: 17,
+    },
+  },
+);
