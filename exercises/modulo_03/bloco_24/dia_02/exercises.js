@@ -14,3 +14,17 @@ db.movies.updateOne(
   {$pop: { category: -1 }}
 )
 // Exercise 4
+db.movies.updateOne(
+  {title: "Batman"},
+  {$pop: { category: -1 }}
+)
+// Exercise 5
+db.movies.updateOne(
+  {title: "Batman"},
+  {$pop: { category: 1 }}
+)
+// Exercise 6
+db.movies.updateOne(
+  { title: 'Batman' },
+  { $push: { category: 'action' } }
+)
