@@ -26,5 +26,9 @@
     "pikaday": "^1.8.2",
     "uniq": "^1.0.1",
     "yarn": "^1.22.10"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.0"
   }
 }
