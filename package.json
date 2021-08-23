@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "mocha exercises/modulo_03/bloco_26/dia_03/tests"
   },
   "repository": {
     "type": "git",
