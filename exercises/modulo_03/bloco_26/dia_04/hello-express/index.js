@@ -1,11 +1,15 @@
 const express = require('express');
+const app = express();
 const bodyParser = require('body-parser');
 
-const app = express();
 app.use(bodyParser.json());
 
-app.get('/hello', (req, res) => {
-  res.status(200).send(`Hello World`);
+app.post('/hello', (req, res) => {
+  // req.body agora está disponível
+  res.status(200)
+    .json({
+      greeting: `Hello, ${req.body.name}!`
+    });
 });
 
-app.listen(3000);
+app.listen(3000, () => { console.log('Listening'); });
