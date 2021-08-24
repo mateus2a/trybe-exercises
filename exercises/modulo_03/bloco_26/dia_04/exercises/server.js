@@ -22,6 +22,12 @@ app.post('/greetings', (req, res) => {
   if (age <= 17) res.status(401).json({ "message": "Unauthorized" });
 });
 
+// Exercise 3
+app.put('/users/:name/:age', (req, res) => {
+  const { name, age } = req.params;
+  res.status(200).json({ "message": `Seu nome é ${name} e você tem ${age} anos de idade` })
+});
+
 app.listen(3333, (req, res) => {
   console.log('Rodando na porta 3333');
 })
