@@ -31,10 +31,19 @@ app.put('/users/:name/:age', (req, res) => {
   res.status(200).json({ "message": `Seu nome é ${name} e você tem ${age} anos de idade` })
 });
 
-// Exercise 5
+// Exercise 5 - 6
 app.get('/simpsons', rescue(async (req, res) => {
   const simpsons = await readFile();
   res.status(200).json(simpsons);
+}));
+
+// Exercise 7
+app.get('/simpsons/:id', rescue(async (req, res) => {
+  const simpsons = await readFile();
+  const simpson = simpsons.find(({ id }) => id === req.params.id);
+
+  if (!simpson) return res.status(404).json({ message: 'simpson not found' });
+  return res.status(202).json(simpson);
 }));
 
 app.listen(3333, (req, res) => {
