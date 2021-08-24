@@ -1,5 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const rescue = require('express-rescue');
+
+const readFile = require('./readFiles');
 
 const app = express();
 app.use(bodyParser.json());
@@ -22,11 +25,17 @@ app.post('/greetings', (req, res) => {
   if (age <= 17) res.status(401).json({ "message": "Unauthorized" });
 });
 
-// Exercise 3
+// Exercise 4
 app.put('/users/:name/:age', (req, res) => {
   const { name, age } = req.params;
   res.status(200).json({ "message": `Seu nome é ${name} e você tem ${age} anos de idade` })
 });
+
+// Exercise 5
+app.get('/simpsons', rescue(async (req, res) => {
+  const simpsons = await readFile();
+  res.status(200).json(simpsons);
+}));
 
 app.listen(3333, (req, res) => {
   console.log('Rodando na porta 3333');
