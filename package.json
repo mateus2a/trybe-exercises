@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/mateus2a/trybe-exercises#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "bulma": "^0.9.2",
     "jquery-validation": "^1.19.3",
     "just-validate": "^1.5.0",
