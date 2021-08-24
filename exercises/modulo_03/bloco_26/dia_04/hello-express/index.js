@@ -1,9 +1,10 @@
 const express = require('express');
-const simpsons = require('./simpsons');
-
 const app = express();
+const authRouter = require('./authRouter');
 
-/* Todas as rotas com /simpsons/<alguma-coisa> entram aqui e vão para o roteador. */
-app.use('/simpsons', simpsons);
+app.use('/secure', authRouter);
 
-app.listen(3000);
+/* GET /hello */
+app.get('/hello', (req, res) => {
+  res.status(200).json({ message: 'Hello world, with no auth!' });
+});
