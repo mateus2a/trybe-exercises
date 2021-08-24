@@ -46,6 +46,15 @@ app.get('/simpsons/:id', rescue(async (req, res) => {
   return res.status(202).json(simpson);
 }));
 
+// Exercise 8
+app.post('/simpsons', rescue(async (req, res) => {
+  const simpsons = await readFile();
+  const { id, name } = req.body;
+  simpsons.push({id, name});
+  res.status(202).json(simpsons);
+
+}));
+
 app.listen(3333, (req, res) => {
   console.log('Rodando na porta 3333');
 })
