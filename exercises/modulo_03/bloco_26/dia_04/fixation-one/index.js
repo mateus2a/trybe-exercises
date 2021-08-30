@@ -39,6 +39,12 @@ app.get('/drinks/:id', function (req, res) {
   res.status(200).json(recipe);
 });
 
+app.get('/recipes/search', function (req, res) {
+  const { name } = req.body;
+  const filteredRecipes = recipes.filter((r) => r.name.includes(name));
+  res.status(200).json(filteredRecipes);
+});
+
 app.listen(3333, () => {
   console.log('Aplicação ouvindo na porta 3333');
 });
