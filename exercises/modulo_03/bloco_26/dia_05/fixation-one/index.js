@@ -15,6 +15,10 @@ const validatePrice = (req, res, next) => {
   next();
 }
 
+app.get('/recipes', (req, res) => {
+  res.status(200).json(recipes);
+});
+
 app.post('/recipes', validatePrice, (req, res) => {
   const { id, name, price } = req.body;
   recipes.push({ id, name, price });
@@ -22,7 +26,11 @@ app.post('/recipes', validatePrice, (req, res) => {
 });
 
 app.put('/recipes/:id', validatePrice, (req, res) => {
+  const { id } = req.params;
+  const recipe = recipes.findIndex((r) => r.id = parseInt(id));
+  recipes.splice(recipe, 1);
 
+  res.status(204).end();
 });
 
 app.listen(3333);
