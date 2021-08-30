@@ -1,0 +1,8 @@
+[
+  { "id": 1, "name": "Lasanha", "price": 40.0 },
+  { "id": 2, "name": "Naruto", "price": 30.0 },
+  { "id": 3, "name": "Lamen", "price": 50.0 },
+  { "id": 4, "name": "Oniguiri", "price": 7.0 },
+  { "id": 5, "name": "Curry", "price": 60.0 },
+  { "id": 6, "name": "Arroz", "price": 10.0 }
+]
