@@ -1,36 +1,24 @@
-// const express = require('express');
-// const bodyParser = require('body-parser');
+/* index.js */ 
+const express = require('express');
+const bodyParser = require('body-parser');
 
-// const recipes = require('./apis/recipes.json');
+const app = express();
+app.use(bodyParser.json());
 
-// const app = express();
+// Esta rota não passa pelo middleware de autenticação!
+app.get('/open', function (req, res) {
+  res.send('open!')
+});
 
-// app.use(bodyParser.json());
+app.use(authMiddleware);
 
-// const validatePrice = (req, res, next) => {
-//   const { price } = req.body;
-//   if (price < 0) res.status(406).json({ "error": "Not Acceptable"});
-//   if (isNaN(price)) res.status(400).json({ "error": "Bad Request"});
+const recipesRouter = require('./recipesRouter');
 
-//   next();
-// }
+/* Todas as rotas com /recipes/<alguma-coisa> entram aqui e vão para o roteador. */
+app.use('/recipes', recipesRouter);
 
-// app.get('/recipes', (req, res) => {
-//   res.status(200).json(recipes);
+// app.all('*', function (req, res) {
+//  return res.status(404).json({ message: `Rota '${req.path}' não existe!`});
 // });
 
-// app.post('/recipes', validatePrice, (req, res) => {
-//   const { id, name, price } = req.body;
-//   recipes.push({ id, name, price });
-//   res.status(200).json(recipes);
-// });
-
-// app.put('/recipes/:id', validatePrice, (req, res) => {
-//   const { id } = req.params;
-//   const recipe = recipes.findIndex((r) => r.id = parseInt(id));
-//   recipes.splice(recipe, 1);
-
-//   res.status(204).end();
-// });
-
-// app.listen(3333);
+app.listen(3001, () => { console.log('Ouvindo na porta 3001'); });
