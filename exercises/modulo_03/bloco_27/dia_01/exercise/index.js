@@ -1,20 +1,22 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const middlewares = require('./middlewares');
 
-const User = require('./models/User');
-
+// Criamos a aplicação do express
 const app = express();
+
+// Instalamos o middleware que faz a leitura e conversão do corpo das requisições em JSON
 app.use(bodyParser.json());
 
-app.post('/users', async (req, res) => {
-  const { _id, firstName, lastName, email, password } = req.body;
-  if (!User.isValid)
-    res.status(404).json({
-      error: true,
-      message: "O campo 'password' deve ter pelo menos 6 caracteres",
-    });
-  await User.create({ firstName, lastName, email, password });
-  res.status(201).json({ id: _id, firstName, lastName, email });
-});
+// Dizemos para o express que toda requisição enviada para `POST /user` deve ser tratada pelo middleware `createUser`
+app.post('/user', middlewares.createUser);
 
-app.listen(3000);
+// Definimos a porta
+const PORT = 3000;
+app.post('/user', middlewares.createUser);
+
+app.use(middlewares.error);
+// Iniciamos o servidor
+app.listen(PORT, () => {
+  console.log(`App listening on port ${PORT}`);
+});
