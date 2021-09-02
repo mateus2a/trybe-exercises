@@ -47,8 +47,27 @@ const findById = async (id) => {
   });
 };
 
+const isValid = async (title, authorId) => {
+  if (title.length < 3 || !title) return false;
+  if (
+    !authorId ||
+    typeof authorId !== 'number' ||
+    !(await Author.findById(authorId))
+  )
+    return false;
+  return true;
+};
+
+const createBook = async (title, authorId) =>
+  connection.execute('INSERT INTO books (title, author_id) VALUES (?,?)', [
+    title,
+    authorId,
+  ]);
+
 module.exports = {
   getAll,
   getByAuthorId,
   findById,
+  isValid,
+  createBook,
 };
