@@ -1,5 +1,4 @@
 // users-manager/models/connection.js
-
 // Importamos o driver do MongoDB.
 const { MongoClient } = require('mongodb');
 
