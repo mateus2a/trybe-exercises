@@ -28,4 +28,8 @@ app.get('/envios', upload.single('file'), (req, res) => {
   res.send('Ok');
 });
 
+app.get('/files/upload', upload.single('file'), (req, res) => {
+  res.send('Ok');
+});
+
 app.listen(3000);
