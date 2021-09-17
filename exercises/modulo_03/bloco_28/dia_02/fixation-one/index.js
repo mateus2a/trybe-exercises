@@ -20,6 +20,10 @@ app.get('/', (req, res) => {
   res.send('Hello World')
 });
 
+app.get('/ping', (req, res) => {
+  res.send('Pong')
+});
+
 app.get('/envios', upload.single('file'), (req, res) => {
   res.send('Ok');
 });
