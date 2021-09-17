@@ -6,7 +6,7 @@ app.use(express.json());
 
 const storage = multer.diskStorage({
   destination: (req, file, callback) => {
-    callback(null, 'uploads/');
+    callback(null, 'src/uploads/');
   },
   filename: (req, file, callback) => {
     callback(null, Date.now()+'-'+file.originalname);
