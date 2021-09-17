@@ -40,9 +40,24 @@ const upload = multer({
   }
  });
 
+ const storages = multer.diskStorage({
+  destination: function (req, file, callback) {
+    callback(null, 'src/uploads/')
+  },
+  filename: function (req, file, callback) {
+    callback(null, Date.now()+'-'+file.originalname);
+  }
+});
+ 
+const uploads = multer({ storage: storages });
+
 app.post('/upload', upload.single('file'), (_req, res) => {
   if (req.fileDuplicated)
     return res.status(409).send({ error: { mesage: "File already exists" } })
+  res.status(200).send('Ok');
+});
+
+app.post('/multiple', uploads.array("file"), (_req, res) => {
   res.status(200).send('Ok');
 });
 
