@@ -10,6 +10,7 @@ app.use(bodyParser.json());
 
 const apiRoutes = express.Router();
 apiRoutes.get('/api/posts', routes.getPosts);
+apiRoutes.get('/api/users/:userId', validateJWT, routes.findUserById);
 apiRoutes.post('/api/users', routes.createUsers);
 apiRoutes.post('/api/login', routes.login);
 
