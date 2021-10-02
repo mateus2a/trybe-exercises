@@ -2,11 +2,10 @@ const Book = (sequelize, DataTypes) => {
   const Book = sequelize.define('Book', {
     title: DataTypes.STRING,
     author: DataTypes.STRING,
-    phone_num: DataTypes.STRING,
     pageQuantity: DataTypes.INTEGER,
   });
 
-  return User;
+  return Book;
 };
 
-module.exports = User;
+module.exports = Book;
