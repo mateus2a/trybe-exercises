@@ -1,74 +1,88 @@
-const express = require('express');
 const { Book } = require('../models');
-const router = express.Router();
 
-router.get('/', async (req, res) => {
+const getAll = async (req, res) => {
   try {
     const books = await Book.findAll();
 
-    if (!books) return res.status(404).json({ message: 'Books not found' });
-
-    return res.status(200).json(books);
-  } catch (error) {
+    res.status(200);
+    res.json(books);
+  } catch (e) {
     console.log(e.message);
     res.status(500).json({ message: 'Algo deu errado' });
   }
-});
+};
 
-router.get('/:id', async (req, res) => {
+const getById = async (req, res) => {
   try {
     const { id } = req.params;
-    const book = await Book.findByPk(id);
+    const books = await Book.findByPk(id);
 
-    if (!book) return res.status(404).json({ message: 'Book not found' });
-
-    return res.status(200).json(book);
-  } catch (error) {
+    res.status(200);
+    res.json(books);
+  } catch (e) {
     console.log(e.message);
     res.status(500).json({ message: 'Algo deu errado' });
   }
-});
+};
 
-router.post('/', async (req, res) => {
-  const { title, author } = req.body;
+const createNew = async (req, res) => {
   try {
-    const book = await Book.create({ title, author });
+    const { title, author, pageQuantity = 0 } = req.body;
 
-    return res.status(200).json(book);
-  } catch (error) {
+    const book = await Book.create({
+      title,
+      author,
+      pageQuantity,
+    });
+
+    res.status(201);
+    res.json(book);
+  } catch (e) {
     console.log(e.message);
     res.status(500).json({ message: 'Algo deu errado' });
   }
-});
+};
 
-router.put('/:id', async (req, res) => {
+const updateById = async (req, res) => {
   try {
+    const { title, author, pageQuantity = 0 } = req.body;
     const { id } = req.params;
-    const { title, author } = req.body;
-    const [updateBook] = await Book.update(
-      { title, author },
+
+    const result = await Book.update(
+      {
+        title,
+        author,
+        pageQuantity,
+      },
       { where: { id } }
     );
 
-    if (!updateBook) return res.status(404).json({ message: 'Book not found' });
-
-    return res.status(200).json(updateBook);
-  } catch (error) {
+    res.status(200);
+    res.json(result);
+  } catch (err) {
     console.log(e.message);
     res.status(500).json({ message: 'Algo deu errado' });
   }
-});
+};
 
-router.delete('/:id', async (req, res) => {
+const deleteById = async (req, res) => {
   try {
     const { id } = req.params;
-    await Book.destroy({ where: { id } });
+    const bookToDelete = await Book.findByPk(id);
+    await bookToDelete.destroy();
 
-    return res.status(200).json({ message: 'Usuário excluído com sucesso!' });
-  } catch (error) {
+    res.status(200);
+    res.json(bookToDelete);
+  } catch (e) {
     console.log(e.message);
     res.status(500).json({ message: 'Algo deu errado' });
   }
-});
+};
 
-module.exports = router;
+module.exports = {
+  deleteById,
+  getAll,
+  getById,
+  updateById,
+  createNew,
+};
