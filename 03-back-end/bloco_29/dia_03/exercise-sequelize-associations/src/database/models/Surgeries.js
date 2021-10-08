@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
-  const Surferies = sequelize.define(
-    'Surferies',
+  const Surgeries = sequelize.define(
+    'Surgeries',
     {
       surgery_id: {
         autoIncrement: true,
@@ -15,5 +15,5 @@ module.exports = (sequelize, DataTypes) => {
     }
   );
 
-  return Surferies;
+  return Surgeries;
 };
