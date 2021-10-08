@@ -149,3 +149,10 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 20-3: _Filtrando dados de forma específica_
 - [x] 20-4: _Manipulando tabelas_
 - [x] 20-5: _[Projeto - All For One]()_
+
+##### Bloco 21: Bancos de dados relacionais
+
+- [x] 21-1: _Funções mais usadas no SQL_
+- [x] 21-2: _Descomplicando JOINs e UNIONs_
+- [x] 21-3: _Stored Routines & Subqueries_
+- [x] 21-4: _[Projeto - Vocabulary Booster]()_
