@@ -228,10 +228,17 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 ## Ciência da Computação :hourglass_flowing_sand:
 
-##### Bloco 35: Introdução à Python
+##### Bloco 32: Introdução à Python
 
-- [ ] 35-1: _Introdução - Ciência da Computação_
-- [ ] 35-2: _Aprendendo Python_
-- [ ] 35-3: _Entrada e Saída de Dados_
-- [ ] 35-3: _Testes_
-- [ ] 35-4: _[Projeto - Job Insights]()_
+- [ ] 32-1: _Introdução - Ciência da Computação_
+- [ ] 32-2: _Aprendendo Python_
+- [ ] 32-3: _Entrada e Saída de Dados_
+- [ ] 32-3: _Testes_
+- [ ] 32-4: _[Projeto - Job Insights]()_
+
+##### Bloco 33: Programação Orientada a Objetos e Padrões de Projeto
+
+- [ ] 33-1: _Introdução à programação orientada a objetos_
+- [ ] 33-2: _Herança, Composição e Interfaces_
+- [ ] 33-3: _Padrões de projeto_
+- [ ] 33-4: _[Projeto - Relatórios de Estoque]()_
