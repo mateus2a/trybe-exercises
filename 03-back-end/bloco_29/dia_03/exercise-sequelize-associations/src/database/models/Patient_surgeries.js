@@ -1,4 +1,4 @@
-module.exports = (sequelize, _DataTypes) => {
+module.exports = (sequelize, DataTypes) => {
   const PatientSurgeries = sequelize.define(
     'PatientSurgeries',
     {},
@@ -6,17 +6,17 @@ module.exports = (sequelize, _DataTypes) => {
   );
 
   PatientSurgeries.associate = (models) => {
-    models.Patients.belongsToMany(models.Surgeries, {
-      as: 'patients',
-      through: PatientSurgeries,
-      foreignKey: 'patient_id',
-      otherKey: 'surgery_id',
-    });
     models.Surgeries.belongsToMany(models.Patients, {
-      as: 'surgeries',
+      as: 'patients',
       through: PatientSurgeries,
       foreignKey: 'surgery_id',
       otherKey: 'patient_id',
+    });
+    models.Patients.belongsToMany(models.Surgeries, {
+      as: 'surgeries',
+      through: PatientSurgeries,
+      foreignKey: 'patient_id',
+      otherKey: 'surgery_id',
     });
   };
 
