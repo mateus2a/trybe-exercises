@@ -38,7 +38,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 4-6: _JavaScript - Eventos_
 - [x] 4-7: _JavaScript - Web Storage_
 
-##### Bloco 5: Introdução - JavaScript - Projetos
+##### Bloco 5: JavaScript: DOM, Eventos e Web Storage
 
 - [x] 5-1: _JavaScript - DOM e Seletores_
 - [x] 5-2: _JavaScript - Trabalhando com Elementos_
@@ -47,4 +47,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 5-2: _[Projeto - Arte com Pixels](https://github.com/tryber/sd-010-a-project-pixels-art/pull/24)_
 - [x] 5-3: _[Projeto - Lista de tarefas](https://github.com/tryber/sd-010-a-project-todo-list/pull/33)_
 
+##### Bloco 6: HTML e CSS: Forms, Flexbox e Responsivo
 
+- [x] 6-1: _HTML & CSS - Forms_
+- [x] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
+- [x] 6-3: _CSS Flexbox - Part 1_
+- [x] 6-4: _CSS Flexbox - Part 2_
+- [x] 6-5: _CSS Responsivo - Mobile First_
+- [x] 6-6: _[Projeto - Página inicial do Facebook](https://github.com/tryber/sd-010-a-project-facebook-signup/pull/113)_
