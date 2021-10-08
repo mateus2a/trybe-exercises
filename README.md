@@ -242,3 +242,32 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [ ] 33-2: _Herança, Composição e Interfaces_
 - [ ] 33-3: _Padrões de projeto_
 - [ ] 33-4: _[Projeto - Relatórios de Estoque]()_
+
+##### Bloco 34: Redes e Raspagem de Dados
+
+- [ ] 34-1: _Arquitetura de Redes_
+- [ ] 34-2: _Redes de computadores, ferramentas e segurança_
+- [ ] 34-3: _Raspagem de Dados_
+- [ ] 34-4: _[Projeto - Tech news]()_
+
+##### Bloco 35: Algoritmos
+
+- [ ] 35-1: _Complexidade de Algoritimos_
+- [ ] 35-2: _Recursividade e Estratégias para solução de problemas_
+- [ ] 35-3: _Algoritmos de ordenação e busca_
+- [ ] 35-4: _[Projeto - Algoritmos]()_
+
+##### Bloco 36: Estrutura de Dados I: Arrays, Hashmaps e Sets
+
+- [ ] 36-1: _Arquitetura de Computadores_
+- [ ] 36-2: _Arrays_
+- [ ] 36-3: _Hashmap e Dict_
+- [ ] 36-4: _Set_
+- [ ] 36-5: _[Projeto - Restalrant Orders]()_
+
+##### Bloco 37: Estrutura de Dados II: Listas, Filas e Pilhas
+
+- [ ] 37-1: _Nó e Listas Encadeadas_
+- [ ] 37-2: _Deque_
+- [ ] 37-3: _Pilhas_
+- [ ] 37-4: _[Projeto - TING - Trybe Is Not Google]()_
