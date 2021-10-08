@@ -38,3 +38,13 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 4-6: _JavaScript - Eventos_
 - [x] 4-7: _JavaScript - Web Storage_
 
+##### Bloco 5: Introdução - JavaScript - Projetos
+
+- [x] 5-1: _JavaScript - DOM e Seletores_
+- [x] 5-2: _JavaScript - Trabalhando com Elementos_
+- [x] 5-3: _JavaScript - Eventos_
+- [x] 5-4: _JavaScript - Web Storage_
+- [x] 5-2: _[Projeto - Arte com Pixels](https://github.com/tryber/sd-010-a-project-pixels-art/pull/24)_
+- [x] 5-3: _[Projeto - Lista de tarefas](https://github.com/tryber/sd-010-a-project-todo-list/pull/33)_
+
+
