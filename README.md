@@ -163,3 +163,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 22-2: _Normalização, Formas Normais e Dumps_
 - [x] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
 - [x] 22-3: _[Projeto - One For All]()_
+
+##### Bloco 23: Introdução - NoSQL
+
+- [x] 23-1: _MongoDB - Introdução_
+- [x] 23-2: _Filter Operators_
+- [x] 23-3: _[Projeto - Data Flights]()_
