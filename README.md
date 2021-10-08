@@ -185,25 +185,32 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 ##### Bloco 25: Intro - NodeJS
 
-- [x] 26-1: _NodeJS - Introdução_
-- [x] 26-2: _NodeJS - Fluxo Assíncrono_
-- [x] 26-3: _NodeJS - Arquitetura_
-- [x] 26-4: _[Projeto - A CLI of Ice and Fire]()_
+- [x] 25-1: _NodeJS - Introdução_
+- [x] 25-2: _NodeJS - Fluxo Assíncrono_
+- [x] 25-3: _NodeJS - Arquitetura_
+- [x] 25-4: _[Projeto - A CLI of Ice and Fire]()_
 
 ##### Bloco 26: NodeJS
 
-- [x] 28-1: _Arquitetura de Software - Camada de Serviço_
-- [x] 28-2: _Arquitetura web - Rest e Restful_
-- [x] 28-3: _[Projeto - Store Manager]()_
+- [x] 26-1: _Arquitetura de Software - Camada de Serviço_
+- [x] 26-2: _Arquitetura web - Rest e Restful_
+- [x] 26-3: _[Projeto - Store Manager]()_
 
 ##### Bloco 27: NodeJS
 
-- [x] 29-1: _NodeJS - JWT - (JSON Web Token)_
-- [x] 29-2: _NodeJS - Upload de arquivos com Multer_
-- [x] 29-3: _[Projeto - Cookmaster V2]()_
+- [x] 27-1: _NodeJS - JWT - (JSON Web Token)_
+- [x] 27-2: _NodeJS - Upload de arquivos com Multer_
+- [x] 27-3: _[Projeto - Cookmaster V2]()_
 
 ##### Bloco 28: Introdução - Deploy
 
-- [x] 30-1: _Infraestrutura - Deploy com Heroku_
-- [x] 30-2: _Deploy - Gerenciadores de Processos_
-- [x] 30-3: _[Projeto - Stranger Things]()_
+- [x] 28-1: _Infraestrutura - Deploy com Heroku_
+- [x] 28-2: _Deploy - Gerenciadores de Processos_
+- [x] 28-3: _[Projeto - Stranger Things]()_
+
+##### Bloco 29: Arquitetura: SOLID e ORM
+
+- [x] 29-1: _Arquitetura - Princípios SOLID_
+- [x] 29-2: _ORM - Interface da aplicação com o banco de dados_
+- [x] 29-3: _ORM - Associations_
+- [ ] 32-3: _[Projeto - API de Blogs]()_
