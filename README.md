@@ -201,3 +201,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 29-1: _NodeJS - JWT - (JSON Web Token)_
 - [x] 29-2: _NodeJS - Upload de arquivos com Multer_
 - [x] 29-3: _[Projeto - Cookmaster V2]()_
+
+##### Bloco 28: Introdução - Deploy
+
+- [x] 30-1: _Infraestrutura - Deploy com Heroku_
+- [x] 30-2: _Deploy - Gerenciadores de Processos_
+- [x] 30-3: _[Projeto - Stranger Things]()_
