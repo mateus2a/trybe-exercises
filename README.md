@@ -102,3 +102,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 13-2: _Ciclo de vida de componentes em React_
 - [x] 13-3: _React Router_
 - [x] 13-4: _[Projeto - Movie Cards Library CRUD]()_
+
+##### Bloco 14: Metodologias Ágeis
+
+- [x] 14-1: _Metodologias Ágeis_
+- [x] 14-2: _[Projeto - Frontend Online Store]()_
