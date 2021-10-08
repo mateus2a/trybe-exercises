@@ -139,3 +139,13 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 ##### Bloco 19: Projeto Final de Front-end
 
 - [x] 19-1: _[Projeto - App de Receitas]()_
+
+## Desenvolvimento Back-end :hourglass_flowing_sand:
+
+##### Bloco 20: Introdução - Bancos de dados relacionais
+
+- [x] 20-1: _Banco de dados SQL_
+- [x] 20-2: _Encontrando dados em um banco de dados_
+- [x] 20-3: _Filtrando dados de forma específica_
+- [x] 20-4: _Manipulando tabelas_
+- [x] 20-5: _[Projeto - All For One]()_
