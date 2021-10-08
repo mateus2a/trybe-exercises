@@ -83,3 +83,22 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 10-1: _Jest - Testes Assíncronos_
 - [x] 10-2: _Jest - Simulando comportamentos_
 - [x] 10-3: _[Projeto - Jest Assíncrono e Mocking]()_
+
+##### Bloco 11: Introdução - React
+
+- [x] 11-1: _'Hello, world!' no React!_
+- [x] 11-2: _Componentes React_
+- [x] 11-3: _[Projeto - Movie Cards Library]()_
+
+##### Bloco 12: React
+
+- [x] 12-1: _Components com estado_
+- [x] 12-2: _Eventos e formulários no React_
+- [x] 12-3: _[Projeto - Movie Cards Library Stateful]()_
+
+##### Bloco 13: React
+
+- [x] 13-1: _Melhorando o reuso de componentes: props.children e PropTypes_
+- [x] 13-2: _Ciclo de vida de componentes em React_
+- [x] 13-3: _React Router_
+- [x] 13-4: _[Projeto - Movie Cards Library CRUD]()_
