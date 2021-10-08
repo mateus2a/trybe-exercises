@@ -8,13 +8,13 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 ## Introdução - Desenvolvimento Web :white_check_mark:
 
-##### Bloco 1: Introdução - Unix & Shell
+##### Bloco 1: Introdução - Unix & Bash
 
 - [x] 1-3: _Unix & Bash - Part 1_
 - [x] 1-4: _Unix & Bash - Part 2_
 - [x] 1-5: _Shell Script_
 
-##### Bloco 2: Git & GitHub
+##### Bloco 2: Git, GitHub e Internet
 
 - [x] 2-1: _O que é e para que serve?_
 - [x] 2-2: _Entendendo os comandos_
@@ -28,7 +28,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 3-4: _HTML Semântico_
 - [x] 3-5: _[Projeto - HTML & CSS](https://github.com/tryber/sd-010-a-project-lessons-learned/pull/44)_
 
-##### Bloco 4: Introdução - JavaScript
+##### Bloco 4: Introdução à JavaScript e Lógica de Programação
 
 - [x] 4-1: _JavaScript - Primeiros passos_
 - [x] 4-2: _JavaScript - Array e loop For_
