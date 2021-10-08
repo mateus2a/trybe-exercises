@@ -1,8 +1,10 @@
-const { Patients } = require('../models');
+const { Patients, Plans } = require('../models');
 module.exports = {
   async index(req, res) {
-    const patients = await Patients.findAll();
+    const patients = await Patients.findAll({
+      include: [{ model: Plans, as: 'plans' }],
+    });
 
-    res.send(patients);
+    return res.status(200).json(patients);
   },
 };
