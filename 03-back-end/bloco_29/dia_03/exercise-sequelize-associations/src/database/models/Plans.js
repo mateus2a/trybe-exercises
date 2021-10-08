@@ -5,7 +5,7 @@ module.exports = (sequelize, DataTypes) => {
       plan_id: {
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER,
+        type: DataTypes.INTEGER,
       },
       coverage: DataTypes.STRING,
       price: DataTypes.DOUBLE,

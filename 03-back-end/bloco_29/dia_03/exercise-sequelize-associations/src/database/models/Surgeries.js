@@ -5,7 +5,7 @@ module.exports = (sequelize, DataTypes) => {
       surgery_id: {
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER,
+        type: DataTypes.INTEGER,
       },
       specialty: DataTypes.STRING,
       doctor: DataTypes.STRING,
