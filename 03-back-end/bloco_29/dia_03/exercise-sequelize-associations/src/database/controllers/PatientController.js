@@ -7,4 +7,11 @@ module.exports = {
 
     return res.status(200).json(patients);
   },
+  async store(req, res) {
+    const { plan_id, fullname } = req.body;
+
+    const patients = await Patients.create({ plan_id, fullname });
+
+    res.status(201).json(patients);
+  },
 };
