@@ -213,12 +213,12 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 29-1: _Arquitetura - Princípios SOLID_
 - [x] 29-2: _ORM - Interface da aplicação com o banco de dados_
 - [x] 29-3: _ORM - Associations_
-- [ ] 32-3: _[Projeto - API de Blogs]()_
+- [x] 32-3: _[Projeto - API de Blogs]()_
 
 ##### Bloco 30: Sockets
 
-- [ ] 30-1: _Arquitetura de Software - Camada de View_
-- [ ] 30-1: _Sockets - TCP/UDP & NET_
+- [x] 30-1: _Arquitetura de Software - Camada de View_
+- [x] 30-1: _Sockets - TCP/UDP & NET_
 - [ ] 30-2: _Sockets - Socket.io_
 - [ ] 30-3: _[Projeto - Webchat]()_
 
