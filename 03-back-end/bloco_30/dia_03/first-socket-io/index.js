@@ -6,12 +6,10 @@ const io = require('socket.io')(http, {
   cors: {
     origin: 'http://localhost:3000', // url aceita pelo cors
     methods: ['GET', 'POST'], // Métodos aceitos pela url
-  }});
-
-io.on('connection', (socket) => {
-  console.log(`Usuário conectado. ID: ${socket.id} `);
-  socket.emit('ola', 'Que bom que você chegou aqui! Fica mais um cadin, vai ter bolo :)');
+  },
 });
+
+app.use(express.static(__dirname + '/public'));
 
 require('./sockets/ping')(io);
 
