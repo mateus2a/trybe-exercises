@@ -17,4 +17,8 @@ const createMessage = (message) => {
   messagesUl.appendChild(li);
 };
 
+window.onbeforeunload = function(event) {
+  socket.disconnect();
+};
+
 socket.on('serverMessage', (message) => createMessage(message));
