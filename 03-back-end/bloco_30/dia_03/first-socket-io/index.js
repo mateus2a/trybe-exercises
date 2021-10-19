@@ -13,10 +13,7 @@ io.on('connection', (socket) => {
   socket.emit('ola', 'Que bom que você chegou aqui! Fica mais um cadin, vai ter bolo :)');
 });
 
-io.on('ping', () => {
-  console.log(`${socket.id} emitiu um ping!`);
-  io.emit('pong', `${socket.id} enviou um ping!`);
-});
+require('./sockets/ping')(io);
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
