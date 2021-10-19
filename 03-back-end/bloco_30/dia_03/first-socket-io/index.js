@@ -10,10 +10,12 @@ const io = require('socket.io')(http, {
 
 io.on('connection', (socket) => {
   console.log(`Usuário conectado. ID: ${socket.id} `);
+  socket.emit('ola', 'Que bom que você chegou aqui! Fica mais um cadin, vai ter bolo :)');
 });
 
 io.on('ping', () => {
   console.log(`${socket.id} emitiu um ping!`);
+  io.emit('pong', `${socket.id} enviou um ping!`);
 });
 
 app.get('/', (req, res) => {
