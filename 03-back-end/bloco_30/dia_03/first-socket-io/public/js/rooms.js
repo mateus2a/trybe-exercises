@@ -12,4 +12,14 @@ const createMessage = (message) => {
   messagesUl.appendChild(li);
 }
 
-socket.on('serverMessage', (message) => createMessage(message));
+const form = document.querySelector('form');
+const inputMessage = document.querySelector('#messageInput');
+
+form.addEventListener('submit', (e) =>{
+  e.preventDefault();
+  const message = inputMessage.value;
+  socket.emit('roomClientMessage', { room, message });
+  inputMessage.value = '';
+  return false;
+});
+
