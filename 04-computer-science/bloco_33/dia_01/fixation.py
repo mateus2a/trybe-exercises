@@ -1,3 +1,4 @@
+from math import factorial
 # Fixation 1
 a = 10
 b = 5
@@ -54,3 +55,15 @@ print(info)
 del info["origem"]
 
 print(info)
+
+# Fixation 13
+print(factorial(5))
+
+# Fixation 14
+ratings = [6, 8, 5, 9, 10]
+new_ratings = []
+
+for rating in ratings:
+    new_ratings.append(rating * 10)
+
+print(new_ratings)
