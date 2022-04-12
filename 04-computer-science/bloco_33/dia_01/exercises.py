@@ -9,3 +9,15 @@ def highestNumber(numberOne, numberTwo):
 
 
 print(highestNumber(11, 11))
+
+# Exercise 2
+
+
+def media(list):
+    sum = 0
+    for num in list:
+        sum += num
+    return sum / len(list)
+
+
+print(media([10, 20, 30]))
